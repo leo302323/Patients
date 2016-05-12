@@ -7,8 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= link_to "中文版", :controller => controller.controller_name,
+            :action => controller.action_name, :locale => "zh-CN"	%>
+<%= link_to "English", :controller => controller.controller_name,
+            :action => controller.action_name, :locale => "en" %>
 
-<%= yield %>
+<div class="container">
+  <%= yield %>
+</div>
+
 
 </body>
 </html>

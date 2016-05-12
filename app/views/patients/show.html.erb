@@ -1,24 +1,39 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>First name:</strong>
+  <strong><%= t 'first_name' %>:</strong>
   <%= @patient.first_name %>
 </p>
 
 <p>
-  <strong>Last name:</strong>
-  <%= @patient.last_name %>
-</p>
-
-<p>
-  <strong>Middle name:</strong>
+  <strong><%= t 'middle_name' %>:</strong>
   <%= @patient.middle_name %>
 </p>
 
 <p>
-  <strong>Date of birth:</strong>
+  <strong><%= t 'last_name' %>:</strong>
+  <%= @patient.last_name %>
+</p>
+
+<p>
+  <strong><%= t 'birthday' %>:</strong>
   <%= @patient.date_of_birth %>
 </p>
 
-<%= link_to 'Edit', edit_patient_path(@patient) %> |
-<%= link_to 'Back', patients_path %>
+<p>
+  <strong><%= t 'gender' %>:</strong>
+  <%= t("#{@patient.gender.downcase}") %>
+</p>
+
+<p>
+  <strong><%= t 'status' %>:</strong>
+  <%= t("#{@patient.status.downcase}") %>
+</p>
+
+<p>
+  <strong><%= t 'location' %>:</strong>
+  <%= link_to @patient.location.name, @patient.location %>
+</p>
+
+<%= link_to t('edit'), edit_patient_path(@patient) %> |
+<%= link_to t('back'), patients_path %>

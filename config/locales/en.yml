@@ -20,4 +20,38 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  listing_patients: "List Patients"
+  patients_list: "Patients List"
+  mr: "MR"
+  full_name: "Fullname"
+  age: "Age"
+  gender: "Gender"
+  male: "Male"
+  not_available: "Not available"
+  female: "female"
+  status: "Status"
+  location: "Location"
+  viewed_count: "Viewed Count"
+  actions: "Actions"
+  show: "Show"
+  edit: "Edit"
+  destroy: "Destroy"
+  new_patient: "New Patient"
+  back: "Back"
+  first_name: "first name"
+  middle_name: "middle name"
+  last_name: "last name"
+  birthday: "birthday"
+  submit: "submit"
+  initial: "Initial"
+  referred: "Referred"
+  treatment: "Treatment"
+  closed: "Closed"
+  confirm: "Are you sure?"
+  location_name: 'name'
+  date:
+    order:
+      - :year
+      - :month
+      - :day
+

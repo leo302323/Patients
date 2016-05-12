@@ -2,7 +2,7 @@ require 'test_helper'
 
 class PatientsControllerTest < ActionController::TestCase
   setup do
-    @patient = patients(:one)
+    @patient = FactoryGirl.create(:patient)
   end
 
   test "should get index" do
@@ -18,7 +18,7 @@ class PatientsControllerTest < ActionController::TestCase
 
   test "should create patient" do
     assert_difference('Patient.count') do
-      post :create, patient: { date_of_birth: @patient.date_of_birth, first_name: @patient.first_name, last_name: @patient.last_name, middle_name: @patient.middle_name }
+      post :create, patient: {  }
     end
 
     assert_redirected_to patient_path(assigns(:patient))
@@ -35,7 +35,7 @@ class PatientsControllerTest < ActionController::TestCase
   end
 
   test "should update patient" do
-    patch :update, id: @patient, patient: { date_of_birth: @patient.date_of_birth, first_name: @patient.first_name, last_name: @patient.last_name, middle_name: @patient.middle_name }
+    patch :update, id: @patient, patient: {  }
     assert_redirected_to patient_path(assigns(:patient))
   end
 

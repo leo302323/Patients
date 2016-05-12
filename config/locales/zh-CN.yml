@@ -1,0 +1,35 @@
+zh-CN:
+  listing_patients: "病人信息"
+  patients_list: "全部病人"
+  mr: "编号"
+  full_name: "名字"
+  age: "年龄"
+  gender: "性别"
+  male: "男"
+  not_available: "无"
+  female: "女"
+  status: "状况"
+  location: "地点"
+  viewed_count: "被浏览次数"
+  actions: "操作"
+  show: "查看"
+  edit: "编辑"
+  destroy: "删除"
+  new_patient: "添加病例"
+  back: "返回"
+  first_name: "名"
+  middle_name: "中间名"
+  last_name: "姓"
+  birthday: "生日"
+  submit: "确定"
+  initial: "初建"
+  referred: "查阅"
+  treatment: "治疗"
+  closed: "关闭"
+  confirm: "确定？"
+  location_name: '地点名'
+  date:
+    order:
+      - :year
+      - :month
+      - :day
